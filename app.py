@@ -57,7 +57,7 @@ st.subheader("💡 Pose-moi tes questions et je t'aiderai à comprendre tes cour
 # Entrée utilisateur
 user_input = st.text_area(
     "Pose ta question ici 👇",
-    placeholder="Exemple : Peux-tu expliquer la dérivée d'une fonction ?"
+    placeholder="Exemple : Peux-tu expliquer c'est quoi un algorithme ?"
 )
 
 # Interaction avec l'assistant
@@ -70,9 +70,7 @@ if st.button("Envoyer"):
     else:
         st.warning("Veuillez entrer une question avant d'envoyer.")
 
-# Bouton pour obtenir des exemples supplémentaires
-if st.button("Voir un exemple 📖"):
-    st.info("Exemple : Si f(x) = x², sa dérivée est 2x, ce qui signifie que la pente de la courbe augmente linéairement.")
+
 
 # Note pédagogique
 st.markdown("""
